@@ -1,11 +1,10 @@
-<description>Copyright 2018-2020 PitchBlackRecoveryProject</description>
+<description>Resurrection Remix Recovery based on PitchBlackRecoveryProject</description>
 <?xml version="1.0"?>
 <recovery>
 	<details>
 		<resolution width="1080" height="1920"/>
-		<author>TeamWin & PBRP</author>
-		<title>PitchBlack Recovery Profeject</title>
-		<description>Copyright 2018-2020 PitchBlackRecoveryProject</description>
+		<author>Bushcat & PBRP</author>
+		<title>Resurrection Remix Recovery</title>
 		<preview>preview.png</preview>
 		<themeversion>4</themeversion>
 	</details>
@@ -119,6 +118,7 @@
 		<image name="main_button_reboot" filename="main_button_reboot" retainaspect="1"/>
 		<image name="main_button_log" filename="main_button_log" retainaspect="1"/>
 		<image name="main_button_fixcontexts" filename="main_button_fixcontexts" retainaspect="1"/>
+		<image name="tools" filename="tools" retainaspect="1"/>
 		<image name="main_button_partitionsd" filename="main_button_partitionsd" retainaspect="1"/>
 		<image name="main_button_adb" filename="main_button_adb" retainaspect="1"/>
 		<image name="main_button_terminal" filename="main_button_terminal" retainaspect="1"/>
@@ -265,8 +265,8 @@
 		<variable name="row19a_y" value="1440"/>
 		<variable name="row20_y" value="1472"/>
 		<variable name="row20a_y" value="1504"/>
-		<variable name="row21_y" value="1536"/>
-		<variable name="row21a_y" value="1568"/>
+		<variable name="row21_y" value="1546"/>
+		<variable name="row21a_y" value="1578"/>
 		<variable name="row22_y" value="1600"/>
 		<variable name="row22a_y" value="1632"/>
 		<variable name="row23_y" value="1664"/>
@@ -278,13 +278,13 @@
 		<variable name="navbar_btn_y" value="1800"/>
 		<variable name="keyboard_y" value="1100"/>
 		<variable name="keyboard_terminal_y" value="1010"/>
-		<variable name="background_color" value="#141414"/>
-		<variable name="background_color2" value="#111112"/>
-		<variable name="theme_color" value="#010100"/>
-		<variable name="front_color" value="#010100"/>
-		<variable name="accent_color" value="#7F000000"/>
-	        <variable name="accent_color2" value="#555555"/>
-		<variable name="accent_color_semitransparent" value="#0090CA30"/>
+		<variable name="background_color" value="#000000"/>
+		<variable name="background_color2" value="#000000"/>
+		<variable name="theme_color" value="#000000"/>
+		<variable name="front_color" value="#000000"/>
+		<variable name="accent_color" value="#D40235"/>
+	        <variable name="accent_color2" value="#D40235"/>
+		<variable name="accent_color_semitransparent" value="#D4023530"/>
 		<variable name="text_color" value="#FFFFFF"/>
 		<variable name="sub_header_color" value="#A3A3A3" />
 		<variable name="text_main_button_color" value="#FFFFFF"/>
@@ -304,7 +304,7 @@
 		<variable name="process" value="#00CC44"/>
 		<variable name="fileselector_linecolor" value="#000000"/>
 		<variable name="fileselector_linecolor2" value="#FFFFFF"/>
-		<variable name="fileselector_highlight_color" value="#555555"/>
+		<variable name="fileselector_highlight_color" value="#D40235"/>
 		<variable name="fileselector_separatorheight" value="2"/>
 		<variable name="fileselector_spacing" value="0"/>
 		<variable name="fileselector_install_height" value="1410"/>
@@ -540,7 +540,7 @@
 				<text>%tw_battery%</text>
 			</text>
 			<button>
-				<placement x="%indent%" y="%row24_y%"/>
+				<placement x="%indent%" y="1724"/>
 				<image resource="main_button_black3"/>
 				<highlight color="%highlight_color%"/>
 				<font resource="font_about" color="%text_color%"/>
@@ -1424,9 +1424,9 @@
 				<condition var1="tw_hide_kb" var2="0"/>
 				<placement x="0" y="%keyboard_terminal_y%" w="%screen_width%" h="96"/>
 				<keymargin x="0" y="0"/>
-				<background color="#111111"/>
-				<key-alphanumeric color="#111111" font="keylabel" textcolor="%text_main_button_color%"/>
-				<key-other color="#111111" font="keylabel-small" textcolor="#5b5b5bff"/>
+				<background color="#000000"/>
+				<key-alphanumeric color="#000000" font="keylabel" textcolor="%text_main_button_color%"/>
+				<key-other color="#000000" font="keylabel-small" textcolor="#5b5b5bff"/>
 				<longpress font="keylabel-longpress" textcolor="#5b5b5bff" x="12" y="0"/>
 				<keylabel key="0:k:29" text="Ctrl"/>
 				<keylabel key="0:c:27" text="Esc"/>
@@ -1448,7 +1448,7 @@
 				<condition var1="tw_hide_kb" var2="0"/>
 				<placement x="0" y="%keyboard_y%" w="1080" h="644"/>
 				<keymargin x="8" y="8"/>
-				<background color="#7F000000"/>
+				<background color="#00000000"/>
 				<key-alphanumeric color="#7F000000" font="keylabel" textcolor="%text_main_button_color%"/>
 				<key-other color="#7F000000" font="keylabel-small" textcolor="#5b5b5bff"/>
 				<longpress font="keylabel-longpress" textcolor="#5b5b5bff" x="12" y="0"/>

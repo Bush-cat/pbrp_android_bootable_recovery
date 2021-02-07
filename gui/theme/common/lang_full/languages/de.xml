@@ -32,7 +32,7 @@
 		<string name="adopted_storage">Eingegliederte Storage-Partition</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">PitchBlack Recovery Project</string>
+		<string name="twrp_header">Resurrection Remix Recovery</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp">CPU: %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Akku: %tw_battery%</string>
@@ -762,7 +762,7 @@
 		<string name="cache_dalvik_done">- Löschen der Dalvik-Cache-Verzeichnisse abgeschlossen!</string>
 		<string name="decrypt_cmd" version="2">Versuch, Datenpartition oder Benutzerdaten über die Befehlszeile zu entschlüsseln.</string>
 		<string name="install_reboot" version="2">Neustart in %tw_sleep% second (s)</string>
-		<string name="pb_flashed">* Neues PBRP geflasht, drücken Sie Volume {1}</string>
+		<string name="pb_flashed">* Neues RR Recovery geflasht, drücken Sie Volume {1}</string>
 		<string name="pb_flashed_">* Magisk Patched Ramdisk erkannt !!!</string>
 		<string name="pb_rb_msg">* Volume {1} zum Beenden</string>
 		<string name="copy_logcat_log">Kopiertes Logcat-Protokoll nach {1}</string>
@@ -819,7 +819,7 @@
 		<string name="pbthemes_hdr">Themen</string>
 		<string name="special">Besondere</string>
 		<string name="special_hdr">Besondere</string>
-		<string name="about_pbrp">Über PBRP</string>
+		<string name="about_pbrp">Über RR Recovery</string>
 		<string name="device_info">Geräteinformation</string>
 		<string name="device_maintainer">Gerätewartung</string>
 		<string name="thanksto">Dank an</string>
@@ -831,11 +831,11 @@
 		<string name="device_name">Gerätename:    %pb_device_manufacturer%%pb_device_name%</string>
 		<string name="device_codename">Geräte-Codename:    %pb_device%</string>
 		<string name="build_date">Erstellungsdatum:    %pb_build%</string>
-		<string name="pb_version">PitchBlack Version  :    %pb_ver%</string>
+		<string name="pb_version">RR Recovery Version  :    %pb_ver%</string>
 		<string name="device_maintainer1">Geräteverwalter:    %pb_maintainer%</string>
 		<string name="core_contributors">Hauptakteure</string>
 		<string name="miscellaneous">Verschiedenes</string>
-		<string name="pbrpspecial_btn">PBRP Specials</string>
+		<string name="pbrpspecial_btn">RR Recovery Specials</string>
 		<string name="install_txt">Willst du Änderungen hinzufügen</string>
 		<string name="install2_txt">in Form von Reißverschlüssen oder Img</string>
 		<string name="wipe_txt">Lassen Sie die Ihres Geräts los</string>
@@ -848,7 +848,7 @@
 		<string name="mount2_txt">Partitionen montiert</string>
 		<string name="advanced_txt">Diese Seite ist nicht genug</string>
 		<string name="advanced2_txt">für dich? Wechseln zu</string>
-		<string name="settings_txt">Passen Sie PitchBlack Recovery an!</string>
+		<string name="settings_txt">Passen Sie das Recovery an!</string>
 		<string name="customizations">Anpassungen</string>
 		<string name="themes_txt">Themen</string>
 		<string name="bg_color">Hintergrundfarbe</string>
@@ -903,7 +903,7 @@
 		<string name="pb_dm_verity">DM-Verity erfolgreich gepatcht</string>
 		<string name="pb_dm_verity_off">DM-Verity ist nicht aktiviert</string>
 		<string name="pb_bk">Erstellen einer Sicherung von PB-Dateien - / tmp / pb / backup_wip ...</string>
-		<string name="pb_bk_no">Keine Tools von PBRP erkennen das PBRP-Paket erneut</string>
+		<string name="pb_bk_no">Keine Tools von RR erkennen das RR Recovery-Paket erneut</string>
 		<string name="zip_err_compatibility">Bipass-Höhenkompatibilität</string>
 		<string name="pb_wipe_substratum_overlays">Substratüberlagerungen</string>
 		<string name="substratum_done">- Substratüberlagerungen abwischen abgeschlossen!</string>
@@ -915,11 +915,11 @@
 		<string name="pb_copy_log_cache">Kopieren von Protokollen in den Cache.</string>
 		<string name="pb_dev_name_change">Möchten Sie den Codenamen Ihres Geräts ändern?</string>
 		<string name="img">IMG</string>
-		<string name="zip">POSTLEITZAHL</string>
+		<string name="zip">ZIP</string>
 		<string name="pb_dev_change">Ändern des Geräte-Codenamens von %pb_prop_value% in %pb_codename_change%</string>
 		<string name="pb_dev_changed">Geräte-Codename geändert in %pb_codename_change%</string>
 		<string name="pb_dev_reboot">Ein Neustart ist nach dem Wechseln der Codenamen obligatorisch</string>
-		<string name="pb_dev_name">PBRP Device Codename Changer</string>
+		<string name="pb_dev_name">RR Gerät Codename Changer</string>
 		<string name="codename_changer">Codename Changer</string>
 		<string name="pb_wipe_fbe_cache">FBE-Cache</string>
 		<string name="fbe_done">- FBE Cache Wipe abgeschlossen!</string>

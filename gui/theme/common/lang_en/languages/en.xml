@@ -33,7 +33,7 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">PitchBlack Recovery Project</string>
+		<string name="twrp_header">Resurrection Remix Recovery</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp"> %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>
@@ -86,7 +86,7 @@
 		<string name="folder">Folder:</string>
 		<string name="file">File:</string>
 		<string name="zip_sig_chk">Zip signature verification</string>
-		<string name="inject_twrp_chk">Flash PBRP after install</string>
+		<string name="inject_twrp_chk">Flash RR Recovery after install</string>
 		<string name="install_reboot_chk">Reboot after installation is complete</string>
 		<string name="options_hdr">Options</string>
 		<string name="confirm_flash_hdr">Confirm Flash</string>
@@ -124,13 +124,8 @@
 		<string name="rebooting">Rebooting...</string>
 		<string name="swipe_reboot">Swipe to Reboot</string>
 		<string name="swipe_reboot_s">   Reboot</string>
-		<string name="reboot_install_app_hdr">Install TWRP App?</string>
-		<string name="reboot_install_app1">Would you like to install the Official TWRP App?</string>
-		<string name="reboot_install_app2">The app can check for new TWRP versions.</string>
-		<string name="reboot_install_app_prompt_install">Prompt to install TWRP app if not installed</string>
 		<string name="reboot_install_app_system">Install as a System App</string>
 		<string name="reboot_installing_app">Installing App...</string>
-		<string name="swipe_to_install_app">Swipe to Install TWRP App</string>
 		<string name="swipe_flash">Swipe to Flash</string>
 		<string name="confirm_action">Confirm Action</string>
 		<string name="back_cancel">Press back button to cancel.</string>
@@ -308,14 +303,14 @@
 		<string name="swipe_power_off_s">Power Off</string>
 		<string name="sys_ro_hdr">Unmodified System Partition</string>
 		<string name="sys_ro_keep">Keep System Read only?</string>
-		<string name="sys_rop1">PBRP can leave your system partition unmodified</string>
+		<string name="sys_rop1">RR Recovery can leave your system partition unmodified</string>
 		<string name="sys_rop2">to make it easier for you to take official updates.</string>
-		<string name="sys_rop3">PBRP will be unable to prevent the stock ROM from</string>
-		<string name="sys_rop4">replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rop3">RR Recovery will be unable to prevent the stock ROM from</string>
+		<string name="sys_rop4">replacing RR Recovery and will not offer to root your device.</string>
 		<string name="sys_rop5">Installing zips or performing adb operations may still</string>
 		<string name="sys_rop6">modify the system partition.</string>
-		<string name="sys_rol1">PBRP can leave your system partition unmodified to make it easier for you to take official updates.</string>
-		<string name="sys_rol2">PBRP will be unable to prevent the stock ROM from replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rol1">RR Recovery can leave your system partition unmodified to make it easier for you to take official updates.</string>
+		<string name="sys_rol2">RR Recovery will be unable to prevent the stock ROM from replacing RR Recovery and will not offer to root your device.</string>
 		<string name="sys_rol3">Installing zips or performing adb operations may still modify the system partition.</string>
 		<string name="sys_ro_never_show_chk">Never show this screen during boot again</string>
 		<string name="sys_ro_keep_ro_btn">Keep Read Only</string>
@@ -413,10 +408,10 @@
 		<string name="reload_theme_btn">Reload Theme</string>
 		<string name="reload_theme_btn1">Reload recovery theme if there are issues</string>
 		<string name="dumlock_btn">HTC Dumlock</string>
-		<string name="inject_twrp_btn">Inject TWRP</string>
-		<string name="inject_twrp_confirm">Re-Inject TWRP?</string>
-		<string name="injecting_twrp">Re-Injecting TWRP...</string>
-		<string name="inject_twrp_complete">TWRP Injection Complete</string>
+		<string name="inject_twrp_btn">Inject Recovery</string>
+		<string name="inject_twrp_confirm">Re-Inject Recovery?</string>
+		<string name="injecting_twrp">Re-Injecting Recovery...</string>
+		<string name="inject_twrp_complete">Recovery Injection Complete</string>
 		<string name="swipe_to_confirm">Swipe to Confirm</string>
 		<string name="part_sd_hdr">Partition SD card</string>
 		<string name="invalid_partsd_sel">You must select a removable device</string>
@@ -548,6 +543,12 @@
 		<string name="decrypt_user_fail_fbe">Failed to decrypt user {1}</string>
 		<string name="decrypt_data_enter_pass_fbe">Enter Password for User [%tw_crypto_user_id%]</string>
 		<string name="decrypt_data_enter_pattern_fbe">Enter Pattern for User [%tw_crypto_user_id%]</string>
+		
+		<!-- Features added by Bushcat -->
+		<string name="copy_ab_partitions">Copy A/B Partitions (Finalize)</string>
+		<string name="copy_ab_partitions1">Copy A/B (Finalize)</string>
+		<string name="copy_ab_partitions_confirm">Copy and overwrite slots? (also known as Finalize)</string>
+		<string name="copy_ab_partitions_text">The inactive slot will be copied to the active slot.</string>
 
 		<!-- Various console messages - these consist of user displayed messages, oftentimes errors -->
 		<string name="no_kernel_selinux">Kernel does not have support for reading SELinux contexts.</string>
@@ -688,7 +689,7 @@
 		<string name="need_new_adb">You need adb 1.0.32 or newer to sideload to this device.</string>
 		<string name="no_pwd">No password provided.</string>
 		<string name="done_ors">Done processing script file</string>
-		<string name="injecttwrp">Injecting TWRP into boot image...</string>
+		<string name="injecttwrp">Injecting Recovery into boot image...</string>
 		<string name="zip_err">Error installing zip file '{1}'</string>
 		<string name="installing_zip">Installing zip file '{1}'</string>
 		<string name="select_backup_opt">Setting backup options:</string>
@@ -716,7 +717,7 @@
 		<string name="dumlock_restore">Restoring original boot...</string>
 		<string name="dumlock_reflash">Reflashing recovery to boot...</string>
 		<string name="run_script">Running {1} script...</string>
-		<string name="rename_stock">Renamed stock recovery file in /system to prevent the stock ROM from replacing TWRP.</string>
+		<string name="rename_stock">Renamed stock recovery file in /system to prevent the stock ROM from replacing RR Recovery.</string>
 		<string name="split_backup">Breaking backup file into multiple archives...</string>
 		<string name="backup_error">Error creating backup.</string>
 		<string name="restore_error">Error during restore process.</string>
@@ -728,8 +729,8 @@
 		<string name="base_pkg_err">Failed to load base packages.</string>
 		<string name="simulating">Simulating actions...</string>
 		<string name="backup_cancel">Backup Cancelled</string>
-		<string name="config_twrp">Configuring TWRP...</string>
-		<string name="config_twrp_err">Unable to configure TWRP with this kernel.</string>
+		<string name="config_twrp">Configuring Recovery...</string>
+		<string name="config_twrp_err">Unable to configure Recovery with this kernel.</string>
 		<string name="copy_log">Copied recovery log to {1}.</string>
 		<string name="max_queue">Maximum zip queue reached!</string>
 		<string name="min_queue">Minimum zip queue reached!</string>
@@ -745,10 +746,10 @@
 		<string name="no_real_sdcard">This device does not have a real SD card! Aborting!</string>
 		<string name="cancel_sideload">Cancelling ADB sideload...</string>
 		<string name="change_fs_err">Error changing file system.</string>
-		<string name="theme_ver_err">Custom theme version does not match TWRP version. Using stock theme.</string>
+		<string name="theme_ver_err">Custom theme version does not match Recovery version. Using stock theme.</string>
 		<string name="up_a_level">(Up A Level)</string>
 		<string name="install_reboot" version="2">Rebooting in %tw_sleep% second(s)</string>
-		<string name="pb_flashed">* New PBRP Flashed, press Volume {1}</string>
+		<string name="pb_flashed">* New RR Recovery Flashed, press Volume {1}</string>
 		<string name="pb_flashed_">* Magisk Patched Ramdisk Detected!!!</string>
 		<string name="pb_rb_msg">* Volume {1} to Finish</string>
 		<string name="adbbackup_error">Error with ADB Backup. Quitting..."</string>
@@ -818,7 +819,7 @@
 		<!--PBRP about-->
 		<string name="special">Special</string>
 		<string name="special_hdr">Special</string>
-		<string name="about_pbrp">About PBRP</string>
+		<string name="about_pbrp">About RR Recovery</string>
 		<string name="device_info">Device Information</string>
 		<string name="device_maintainer">Device Maintainer</string>
 		<string name="thanksto">Thanks to</string>
@@ -830,13 +831,13 @@
 		<string name="device_name">Device Name            :    %pb_device_manufacturer% %pb_device_name%</string>
 		<string name="device_codename">Device Codename   :    %pb_device%</string>
 		<string name="build_date">Build Date                 :    %pb_build%</string>
-		<string name="pb_version">PitchBlack Version  :    %pb_ver%</string>
+		<string name="pb_version">RR Recovery Version  :    %pb_ver%</string>
 		<string name="device_maintainer1">Device Maintainer   :    %pb_maintainer%</string>
 		<string name="core_contributors">Core Contributors</string>
 		<string name="miscellaneous">Miscellaneous</string>
 		
 		<!--Extras -->
-		<string name="pbrpspecial_btn">PBRP Specials</string>
+		<string name="pbrpspecial_btn">RR Recovery Specials</string>
 		<string name="install_txt">Wanna Add changes</string>
 		<string name="install2_txt">in form of Zips or Img</string>
 		<string name="wipe_txt">Release your device's</string>
@@ -850,7 +851,7 @@
 		<string name="advanced_txt">This page is not</string>
 		<string name="advanced2_txt">Enough for you?</string>
 		<string name="advanced3_txt">Switch to Advanced</string>
-		<string name="settings_txt">Customize PitchBlack Recovery!</string>
+		<string name="settings_txt">Customize RR Recovery!</string>
 		<string name="customizations">Customizations</string>
 		<string name="themes_txt">Themes</string>
 		<string name="bg_color">Background Color</string>
@@ -908,7 +909,7 @@
 		<string name="pb_dm_verity">Successfully patched DM-Verity</string>
 		<string name="pb_dm_verity_off">DM-Verity is not enabled</string>
 		<string name="pb_bk">Creating Backup of PB Files -- /tmp/pb/backup_wip...</string>
-		<string name="pb_bk_no">No Tools of PBRP are detecting Reflash the PBRP Package</string>
+		<string name="pb_bk_no">No Tools of RR are detecting Reflash the RR Recovery Package</string>
 		<string name="mount_system_as_root">Mount System As Root</string>
 		<string name="zip_err_compatibility">Bypass Treble Compatibility</string>
 		<string name="pb_wipe_substratum_overlays">Substratum Overlays</string>
@@ -927,7 +928,7 @@
 		<string name="pb_dev_change">Changing Device Codename from %pb_prop_value% to %pb_codename_change%</string>
 		<string name="pb_dev_changed">Device Codename Changed to %pb_codename_change%</string>
 		<string name="pb_dev_msg">! This is A Temporary Change will be Restored after Restart</string>
-		<string name="pb_dev_name">PBRP Device Codename Changer</string>
+		<string name="pb_dev_name">RR Device Codename Changer</string>
 		<string name="codename_changer">Codename Changer</string>
 		<string name="magisk_done">-- Magisk Modules Wipe Complete!</string>
 		<string name="pb_wipe_fbe_cache">FBE Cache</string>
@@ -939,7 +940,7 @@
 		<string name="pb_theme_2">us on</string>
 		<string name="pb_device_ab">Settings for A/B Devices</string>
 		<string name="pb_ota_instruction">Please check instructions for OTA Updates on</string>
-		<string name="pb_thanks">Thank you for using PitchBlack Recovery..!</string>
+		<string name="pb_thanks">Thank you for using Resurrection Remix Recovery!</string>
 		<string name="pb_donate">Consider donating, if you like it</string>
 		<string name="pb_coming_soon">Coming Soon....!</string>
 	</resources>

@@ -197,7 +197,6 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(killterminal);
 		ADD_ACTION(checkbackupname);
 		ADD_ACTION(adbsideloadcancel);
-		ADD_ACTION(fixsu);
 		ADD_ACTION(startmtp);
 		ADD_ACTION(stopmtp);
 		ADD_ACTION(cancelbackup);
@@ -228,7 +227,6 @@ GUIAction::GUIAction(xml_node<>* node)
 		ADD_ACTION(decrypt);
 		ADD_ACTION(adbsideload);
 		ADD_ACTION(openrecoveryscript);
-		ADD_ACTION(installsu);
 		ADD_ACTION(decrypt_backup);
 		ADD_ACTION(repair);
 		ADD_ACTION(resize);
@@ -1220,7 +1218,7 @@ int GUIAction::keycheck(std::string zip, int w __unused)
 			gui_print_color("normal", "* * * * * * * * * * * * * * * * * *\n");
 			if (zip != "recovery.img")
 				gui_highlight("pb_flashed_=* Magisk Patched Ramdisk Detected!!!");
-			gui_msg(Msg(msg::kHighlight, "pb_flashed=* New PBRP Flashed, press Volume {1}")("Up For Flashing Magisk."));
+			gui_msg(Msg(msg::kHighlight, "pb_flashed=* New RR Recovery Flashed, press Volume {1}")("Up For Flashing Magisk."));
 			gui_msg(Msg(msg::kHighlight, "pb_rb_msg=*Volume {1} to Finish")("Down"));
 			gui_print_color("normal", "* * * * * * * * * * * * * * * * * *\n");
 			pbRet = keypressed();
@@ -1236,7 +1234,7 @@ int GUIAction::keycheck(std::string zip, int w __unused)
 #endif
 		usleep(50000);
 		gui_print_color("normal", "* * * * * * * * * * * * * * * * * *\n");
-		gui_msg(Msg(msg::kHighlight, "pb_flashed=* New PBRP Flashed, press Volume {1}")("Down to Reboot to Recovery."));
+		gui_msg(Msg(msg::kHighlight, "pb_flashed=* New RR Recovery Flashed, press Volume {1}")("Down to Reboot to Recovery."));
 		gui_msg(Msg(msg::kHighlight, "pb_rb_msg=*Volume {1} to Finish")("Up"));
 		gui_print_color("normal", "* * * * * * * * * * * * * * * * * *\n");
 		pbRet = keypressed();
@@ -1900,37 +1898,6 @@ int GUIAction::openrecoveryscript(std::string arg __unused)
 		int op_status = OpenRecoveryScript::Run_OpenRecoveryScript_Action();
 		operation_end(op_status);
 	}
-	return 0;
-}
-
-int GUIAction::installsu(std::string arg __unused)
-{
-	int op_status = 0;
-
-	operation_start("Install SuperSU");
-	if (simulate) {
-		simulate_progress_bar();
-	} else {
-		LOGERR("Installing SuperSU was deprecated from TWRP.\n");
-	}
-
-	operation_end(op_status);
-	return 0;
-}
-
-int GUIAction::fixsu(std::string arg __unused)
-{
-	int op_status = 0;
-
-	operation_start("Fixing Superuser Permissions");
-	if (simulate) {
-		simulate_progress_bar();
-	} else {
-		LOGERR("Fixing su permissions was deprecated from TWRP.\n");
-		LOGERR("4.3+ ROMs with SELinux will always lose su perms.\n");
-	}
-
-	operation_end(op_status);
 	return 0;
 }
 
