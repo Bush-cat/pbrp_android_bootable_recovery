@@ -1,4 +1,4 @@
-**Pitch Black Recovery Project (PBRP) <br>**
-**Based on TWRP**
+**Bushcat Recovery <br>**
+**Based on PBRP and TWRP**
 
-You can find a compiling guide [here](http://forum.xda-developers.com/showthread.php?t=1943625 "Guide").
+You can find a compiling guide [here](https://github.com/Bush-cat/manifest_pb).
