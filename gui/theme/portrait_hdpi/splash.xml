@@ -12,7 +12,7 @@
 		<font name="font_l" filename="pb.ttf" size="91"/>
 		<font name="font_2" filename="pb.ttf" size="50"/>
 		<image name="splashlogo" filename="splashlogo" retainaspect="1"/>
-		<image name="splashteamwin" filename="splashlogo" retainaspect="1"/>
+		<image name="splashteamwin" filename="splashteamwin" retainaspect="1"/>
 	</resources>
 
 	<variables>
