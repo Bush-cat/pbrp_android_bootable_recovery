@@ -544,11 +544,6 @@
 				<placement x="600" y="1160"/>
 				<text>{@advanced2_txt=Enough for you?}</text>
 			</text>
-
-			<text style="text_header">
-				<placement x="600" y="1210"/>
-				<text>{@advanced3_txt=Switch to Advanced}</text>
-			</text>
 		</page>
 
 		<page name="filter_">
@@ -4208,7 +4203,7 @@
 				<image resource="main_button_advanced"/>
 				<placement x="%upper_header%" y="135"/>
 			</image>
-
+			
 			<image>
 				<image resource="scrolling_notice"/>
 				<placement x="%indent%" y="%row4_y%"/>
@@ -4302,6 +4297,24 @@
 					<actions>
 						<action function="set">tw_crypto_user_id=</action>
 						<action function="page">decrypt_users</action>
+					</actions>
+				</listitem>
+
+				<listitem name="{@copy_ab_partitions1=Copy A/B (Finalize)}">
+					<condition var1="tw_has_boot_slots" var2="1"/>
+					<text>{@copy_ab_partitions1=Copy A/B (Finalize)}</text>
+					<icon icon="main_button_fixcontexts"/>
+					<actions>
+						<action function="set">tw_back=advanced</action>
+						<action function="set">tw_filename=/sdcard/PBRP/tools/copy-partitions-AB.zip</action>
+						<action function="set">tw_action=queuezip</action>
+						<action function="set">tw_has_action2=1</action>
+						<action function="set">tw_action2=flash</action>
+						<action function="set">tw_action2_param=flash_zip</action>
+						<action function="set">tw_text1={@copy_ab_partitions_text=The inactive slot will be copied to the active slot.}</action>
+						<action function="set">tw_text2={@copy_ab_partitions_confirm=Copy and overwrite slots? (also known as Finalize)}</action>
+						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+						<action function="page">confirm_action</action>
 					</actions>
 				</listitem>
 
