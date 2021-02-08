@@ -1,4 +1,4 @@
-<description>Copyright 2018-2020 PitchBlackRecoveryProject</description>
+<description>KANG OS Recovery based on PitchBlackRecoveryProject</description>
 <?xml version="1.0"?>
 <recovery>
     <pages>
@@ -6,7 +6,7 @@
 		<template name="page"/>
 		<text style="text_l">
 			<placement x="%col1_x_header%" y="%row3_header_y%"/>
-			<text>{@pb_dev_name=PBRP Device Codename Changer}</text>
+			<text>{@pb_dev_name=Device Codename Changer}</text>
 		</text>
 		<text style="text_sub_header">
 			<placement x="%col1_x_header%" y="%row4_header_y%"/>
@@ -59,7 +59,7 @@
 			<placement x="%indent%" y="%upper_header%"/>
 		</image>
 			<image>
-				<image resource="main_button_fixcontexts"/>
+				<image resource="tools"/>
 				<placement x="45" y="%row3_header_y%"/>
 			</image>
 			<text style="text_l">
@@ -302,7 +302,7 @@
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=KANG Special}</text>
 			</text>
 			<text>
 				<font resource="font_roboto" color="%sub_header_color%"/>
@@ -352,21 +352,21 @@
 			</text>
 			<button style="main_button_install_done">
 				<condition var1="tw_has_boot_slots" var2="1"/>
-				<placement x="90" y="%row14a_y%"/>
+				<placement x="90" y="1100"/>
 				<text>{@install_twrp_ramdisk=Install Recovery Ramdisk}</text>
 				<action function="set">tw_repack_kernel=0</action>
 				<action function="page">repackselect</action>
 			</button>
-			<button style="main_button_half_height_new">
+			<button style="main_button_install_done">
 				<condition var1="tw_has_boot_slots" var2="1"/>
-				<placement x="35" y="%row16_y%"/>
+				<placement x="90" y="1250"/>
 				<text>{@install_kernel=Install Kernel}</text>
 				<action function="set">tw_repack_kernel=1</action>
 				<action function="page">repackselect</action>
 			</button>
 			<button style="main_button_install_done">
 				<condition var1="tw_has_boot_slots" var2="1"/>
-				<placement x="90" y="%row19a_y%"/>
+				<placement x="90" y="1400"/>
 				<text>{@fix_recovery_loop=Fix Recovery Bootloop}</text>
 				<actions>
 					<action function="set">tw_back=advanced</action>
@@ -374,6 +374,23 @@
 					<action function="set">tw_text1={@fix_recovery_loop_confirm=Fix Recovery Bootloop?}</action>
 					<action function="set">tw_action_text1={@fixing_recovery_loop=Fixing Recovery Bootloop...}</action>
 					<action function="set">tw_complete_text1={@fix_recovery_loop_complete=Fix Recovery Bootloop Complete}</action>
+					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+					<action function="page">confirm_action</action>
+				</actions>
+			</button>
+			<button style="main_button_install_done">
+				<condition var1="tw_has_boot_slots" var2="1"/>
+				<placement x="90" y="1550"/>
+				<text>{@copy_ab_partitions=Copy A/B Partitions (Finalize)}</text>
+				<actions>
+					<action function="set">tw_back=advanced</action>
+					<action function="set">tw_filename=/sdcard/PBRP/tools/copy-partitions-AB.zip</action>
+					<action function="set">tw_action=queuezip</action>
+					<action function="set">tw_has_action2=1</action>
+					<action function="set">tw_action2=flash</action>
+					<action function="set">tw_action2_param=flash_zip</action>
+					<action function="set">tw_text1={@copy_ab_partitions_text=The inactive slot will be copied to the active slot.}</action>
+					<action function="set">tw_text2={@copy_ab_partitions_confirm=Copy and overwrite slots? (also known as Finalize)}</action>
 					<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
 					<action function="page">confirm_action</action>
 				</actions>
@@ -399,11 +416,11 @@
 			</image>
 			<text style="text_pb">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@about_pbrp=About PBRP}</text>
+				<text>{@about_pbrp=About KANG OS Recovery}</text>
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=KANG Special}</text>
 			</text>
 			<image>
 				<image resource="power_logo"/>
@@ -427,7 +444,7 @@
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
 				<placement x="180" y="%row11a_y%"/>
-				<text>{@pb_version=PitchBlack Version}</text>
+				<text>{@pb_version=KANG OS Recovery Version}</text>
 			</text>
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
@@ -436,7 +453,7 @@
 			</text>
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
-				<condition var1="pb_info" var2="OFFICIAL"/>
+				<condition var1="pb_info"/>
 				<placement x="180" y="%row13a_y%"/>
 				<text>{@device_maintainer1=Device Maintainer}</text>
 			</text>
@@ -485,6 +502,11 @@
 				<placement x="%center_x%" y="1598" placement="5"/>
 				<text>MD RAZA (@raza231198)</text>
 			</text>
+			<text>
+				<font resource="font_sub_header" color="%sub_header_color%"/>
+				<placement x="%center_x%" y="1648" placement="5"/>
+				<text>Themed by Bushcat (@Bush_cat)</text>
+			</text>
 			<action>
 				<touch key="home"/>
 				<action function="page">main</action>
@@ -510,7 +532,7 @@
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=KANG Special}</text>
 			</text>
 			<image>
 				<image resource="power_logo"/>

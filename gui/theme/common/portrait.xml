@@ -1,4 +1,4 @@
-<description>Copyright 2018-2020 PitchBlackRecoveryProject</description>
+<description>KANG OS Recovery based on PitchBlackRecoveryProject</description>
 <?xml version="1.0"?>
 <recovery>
 	<styles>
@@ -376,7 +376,7 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@twrp_header=PitchBlack Recovery Project}</text>
+				<text>{@twrp_header=KANG OS Recovery}</text>
 			</text>
 
 			<text style="text_sub_header">
@@ -443,13 +443,13 @@
 			<button style="main_button_black2">
 				<placement x="%indent_button%" y="%row17a_y%" textplacementmain="1" large="1"/>
 				<icon resource="main_button_special"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=KANG Special}</text>
 				<action function="page">pbrp_special</action>
 			</button>
 
 			<text style="text_header">
 				<placement x="90" y="%row19a_y%"/>
-				<text>{@settings_txt=Customize PBRP with themes, icons, more}</text>
+				<text>{@settings_txt=Customize KANG OS Recovery with themes, icons, more}</text>
 			</text>
 
 			<button style="main_button_themes_features">
@@ -723,7 +723,7 @@
 				<listitem name="{@install_reboot_chk=Reboot after installation is complete}">
 					<data variable="tw_install_reboot"/>
 				</listitem>
-				<listitem name="{@inject_twrp_chk=Flash PBRP after install}">
+				<listitem name="{@inject_twrp_chk=Flash KANG OS Recovery after install}">
 					<condition var1="tw_has_injecttwrp" var2="1"/>
 					<data variable="tw_inject_after_zip"/>
 				</listitem>
@@ -942,7 +942,7 @@
 					<condition var1="tw_sleep" op="&gt;" var2="0"/>
 					<condition var1="tw_install_reboot_recovery" var2="0"/>
 				</conditions>
-				<placement x="%center_x%" y="%row21a_y%"/>
+				<placement x="%center_x%" y="%row21_y%"/>
 				<text>{@cancel_btn=Cancel}</text>
 				<actions>
 					<action function="set">tw_install_reboot=0</action>
@@ -2585,18 +2585,13 @@
 
 			<template name="progress_bar"/>
 
-			<text style="text_m_accent">
-				<placement x="%indent%" y="%row21a_y%"/>
-				<text>{@progress=Progress:}</text>
-			</text>
-
 			<text style="text_m">
-				<placement x="%indent%" y="1620"/>
+				<placement x="%indent%" y="1610"/>
 				<text>%tw_file_progress%</text>
 			</text>
 
 			<text style="text_m">
-				<placement x="%indent%" y="1670"/>
+				<placement x="%indent%" y="1660"/>
 				<text>%tw_size_progress%</text>
 			</text>
 
@@ -3045,11 +3040,6 @@
 
 			<template name="progress_bar"/>
 
-			<text style="text_m_accent">
-				<placement x="%indent%" y="%row21a_y%"/>
-				<text>{@progress=Progress:}</text>
-			</text>
-
 			<text style="text_m">
 				<placement x="%indent%" y="%row22a_y%"/>
 				<text>%tw_size_progress%</text>
@@ -3394,7 +3384,7 @@
 
 			<text style="text_sub_header">
 				<placement x="200" y="%row7_y%"/>
-				<text>{@pb_thanks=Thank you for using PitchBlack Recovery..!}</text>
+				<text>{@pb_thanks=Thank you for using KANG OS Recovery}</text>
 			</text>
 
 			<text style="text_sub_header">
@@ -3597,80 +3587,6 @@
 			</action>
 		</page>
 
-		<page name="rebootapp">
-			<template name="page"/>
-
-			<text style="text_l">
-				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@reboot_hdr=Reboot}</text>
-			</text>
-
-			<text style="text_m">
-				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@reboot_install_app_hdr=Install TWRP App?}</text>
-			</text>
-
-			<text style="text_m_accent">
-				<placement x="%center_x%" y="%row2_y%" placement="5"/>
-				<text>{@reboot_install_app1=Would you like to install the Official TWRP App?}</text>
-			</text>
-
-			<text style="text_m_accent">
-				<placement x="%center_x%" y="%row3_y%" placement="5"/>
-				<text>{@reboot_install_app2=The app can check for new TWRP versions.}</text>
-			</text>
-
-			<checkbox>
-				<placement x="%indent%" y="%row5_y%"/>
-				<text>{@reboot_install_app_prompt_install=Prompt to install TWRP app if not installed}</text>
-				<data variable="tw_app_prompt"/>
-			</checkbox>
-
-			<checkbox>
-				<condition var1="tw_mount_system_ro" var2="0"/>
-				<placement x="%indent%" y="%row7_y%"/>
-				<text>{@reboot_install_app_system=Install as a System App}</text>
-				<data variable="tw_app_install_system"/>
-			</checkbox>
-
-			<button style="main_button_half_height">
-				<placement x="%indent%" y="%row16_y%"/>
-				<text>{@install_cancel=Do not Install}</text>
-				<action function="reboot">%tw_reboot_param%</action>
-			</button>
-
-			<slider>
-				<text>{@swipe_to_install_app=Swipe to Install TWRP App}</text>
-				<actions>
-					<action function="set">tw_back=reboot</action>
-					<action function="set">tw_action=installapp</action>
-					<action function="set">tw_action_text1={@reboot_installing_app=Installing App...}</action>
-					<action function="set">tw_action_text2=</action>
-					<action function="set">tw_has_action2=1</action>
-					<action function="set">tw_action2=reboot</action>
-					<action function="set">tw_action2_param=%tw_reboot_param%</action>
-					<action function="set">tw_complete_text1={@rebooting=Rebooting...}</action>
-					<action function="page">action_page</action>
-				</actions>
-			</slider>
-
-			<action>
-				<touch key="home"/>
-				<actions>
-					<action function="set">tw_app_install_status=0</action>
-					<action function="page">main</action>
-				</actions>
-			</action>
-
-			<action>
-				<touch key="back"/>
-				<actions>
-					<action function="set">tw_app_install_status=0</action>
-					<action function="page">reboot</action>
-				</actions>
-			</action>
-		</page>
-
 		<page name="system_readonly">
 			<template name="page"/>
 
@@ -3686,7 +3602,7 @@
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row4_y%" placement="5"/>
-				<text>{@sys_rop1=PBRP can leave your system partition unmodified}</text>
+				<text>{@sys_rop1=KANG OS Recovery can leave your system partition unmodified}</text>
 			</text>
 
 			<text style="text_m">
@@ -3696,12 +3612,12 @@
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row6_y%" placement="5"/>
-				<text>{@sys_rop3=PBRP will be unable to prevent the stock ROM from}</text>
+				<text>{@sys_rop3=KANG OS Recovery will be unable to prevent the stock ROM from}</text>
 			</text>
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row7_y%" placement="5"/>
-				<text>{@sys_rop4=replacing PBRP and will not offer to root your device.}</text>
+				<text>{@sys_rop4=replacing KANG OS Recovery and will not offer to root your device.}</text>
 			</text>
 
 			<text style="text_m_fail">
@@ -3814,9 +3730,6 @@
 				</listitem>
 				<listitem name="{@show_free_sdmb=Show Free SD Mb}">
 					<data variable="tw_sd_free"/>
-				</listitem>
-				<listitem name="{@use_aromafm=Use Aroma File Manager}">
-					<data variable="aromafm"/>
 				</listitem>
 			</listbox>
 
@@ -4237,24 +4150,6 @@
 					<icon icon="main_button_explorer"/>
 					<action function="page">filemanagerlist</action>
 				</listitem>
-				<listitem name="{@file_manager_btn=File Manager}">
-					<text>{@file_manager_btn1=Manage your files,folders on your device}</text>
-					<condition var1="aromafm" var2="1"/>
-					<icon icon="main_button_explorer"/>
-					<actions>
-						<action function="set">tw_back=filemanagerlist</action>
-						<action function="set">tw_filename=/sdcard/PBRP/tools/aromafm/aromafm.zip</action>
-						<action function="set">tw_action=queuezip</action>
-						<action function="set">pb_install_built_in_zip=1</action>
-						<action function="set">tw_has_action2=1</action>
-						<action function="set">tw_action2=flash</action>
-						<action function="set">tw_action2_param=flash_zip</action>
-						<action function="set">tw_text1={@Aroma_FM_text=Aroma FM will be installed.}</action>
-						<action function="set">tw_text2={@Aroma_FM_confirm=Try to install it?}</action>
-						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
-						<action function="page">confirm_action</action>
-					</actions>
-				</listitem>
 				<listitem name="{@terminal_btn=Terminal}">
 					<text>{@terminal_btn1=Launches elevated terminal console}</text>
 					<icon icon="main_button_terminal"/>
@@ -4305,6 +4200,23 @@
 					</actions>
 				</listitem>
 
+				<listitem name="{@copy_ab_partitions1=Copy A/B (Finalize)}">
+					<condition var1="tw_has_boot_slots" var2="1"/>
+					<text>{@copy_ab_partitions1=Copy A/B (Finalize)}</text>
+					<icon icon="main_button_fixcontexts"/>
+					<actions>
+						<action function="set">tw_back=advanced</action>
+						<action function="set">tw_filename=/sdcard/PBRP/tools/copy-partitions-AB.zip</action>
+						<action function="set">tw_action=queuezip</action>
+						<action function="set">tw_has_action2=1</action>
+						<action function="set">tw_action2=flash</action>
+						<action function="set">tw_action2_param=flash_zip</action>
+						<action function="set">tw_text1={@copy_ab_partitions_text=The inactive slot will be copied to the active slot.}</action>
+						<action function="set">tw_text2={@copy_ab_partitions_confirm=Copy and overwrite slots? (also known as Finalize)}</action>
+						<action function="set">tw_slider_text={@swipe_to_confirm=Swipe to Confirm}</action>
+						<action function="page">confirm_action</action>
+					</actions>
+				</listitem>
 				<listitem name="{@install_twrp_ramdisk=Install Recovery Ramdisk}">
 					<condition var1="tw_has_boot_slots" var2="1"/>
 					<text>{@install_twrp_ramdisk1=Install Recovery Ramdisk}</text>
@@ -4779,7 +4691,7 @@
 		</page>
 
 		<page name="lock">
-			<background color="#191919"/>
+			<background color="#000000"/>
 
 			<image>
 				<image resource="splashlogo"/>
@@ -6487,7 +6399,7 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=KANG Special}</text>
 			</text>
 
 			<text style="text_sub_header">
@@ -6506,7 +6418,7 @@
 
 			<text style="text_pb">
 				<placement x="350" y="350"/>
-				<text>{@about_pbrp=About PBRP}</text>
+				<text>{@about_pbrp=About KANG OS Recovery}</text>
 			</text>
 
 			<text style="text_header">
@@ -6517,11 +6429,6 @@
 			<text style="text_header">
 				<placement x="350" y="475"/>
 				<text>{@device_maintainer=Device Maintainer}</text>
-			</text>
-
-			<text style="text_header">
-				<placement x="350" y="525"/>
-				<text>{@contributors=Contributors}</text>
 			</text>
 
 			<button style="main_button_pbrp_custom">
@@ -6565,11 +6472,6 @@
 				<text>{@Magisk_btn=Magisk}</text>
 			</text>
 
-			<text style="text_header">
-				<placement x="350" y="1245"/>
-				<text>{@Pin/Pass_Remover_btn=Pin/Pass Remover}</text>
-			</text>
-
 			<button style="main_button_pbrp_special_settings">
 				<placement x="0" y="1320"/>
 				<actions>
@@ -6591,11 +6493,6 @@
 			<text style="text_header">
 				<placement x="350" y="1555"/>
 				<text>{@device_ab=A/B Device Settings}</text>
-			</text>
-
-			<text style="text_header">
-				<placement x="350" y="1605"/>
-				<text>{@tools_hdr=Tools Options}</text>
 			</text>
 
 			<action>

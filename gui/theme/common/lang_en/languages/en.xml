@@ -10,6 +10,12 @@
 		<resource name="font_s" type="fontoverride" filename="pb.ttf" scale="100" />
 		<resource name="fixed" type="fontoverride" filename="pb.ttf" scale="100" />
 
+		<!-- Features added by Bushcat -->
+		<string name="copy_ab_partitions">Copy A/B Partitions (Finalize)</string>
+		<string name="copy_ab_partitions1">Copy A/B (Finalize)</string>
+		<string name="copy_ab_partitions_confirm">Copy and overwrite slots? (also known as Finalize)</string>
+		<string name="copy_ab_partitions_text">The inactive slot will be copied to the active slot.</string>
+
 		<!-- Partition display names -->
 		<string name="system">System</string>
 		<string name="system_image">System Image</string>
@@ -33,7 +39,7 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">PitchBlack Recovery Project</string>
+		<string name="twrp_header">KANG OS Recovery Project</string>
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp"> %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>
@@ -86,7 +92,7 @@
 		<string name="folder">Folder:</string>
 		<string name="file">File:</string>
 		<string name="zip_sig_chk">Zip signature verification</string>
-		<string name="inject_twrp_chk">Flash PBRP after install</string>
+		<string name="inject_twrp_chk">Flash KANG OS Recovery after install</string>
 		<string name="install_reboot_chk">Reboot after installation is complete</string>
 		<string name="options_hdr">Options</string>
 		<string name="confirm_flash_hdr">Confirm Flash</string>
@@ -308,14 +314,14 @@
 		<string name="swipe_power_off_s">Power Off</string>
 		<string name="sys_ro_hdr">Unmodified System Partition</string>
 		<string name="sys_ro_keep">Keep System Read only?</string>
-		<string name="sys_rop1">PBRP can leave your system partition unmodified</string>
+		<string name="sys_rop1">KANG OS can leave your system partition unmodified</string>
 		<string name="sys_rop2">to make it easier for you to take official updates.</string>
-		<string name="sys_rop3">PBRP will be unable to prevent the stock ROM from</string>
-		<string name="sys_rop4">replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rop3">KANG OS will be unable to prevent the stock ROM from</string>
+		<string name="sys_rop4">replacing KANG OS and will not offer to root your device.</string>
 		<string name="sys_rop5">Installing zips or performing adb operations may still</string>
 		<string name="sys_rop6">modify the system partition.</string>
-		<string name="sys_rol1">PBRP can leave your system partition unmodified to make it easier for you to take official updates.</string>
-		<string name="sys_rol2">PBRP will be unable to prevent the stock ROM from replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rol1">KANG OS can leave your system partition unmodified to make it easier for you to take official updates.</string>
+		<string name="sys_rol2">KANG OS will be unable to prevent the stock ROM from replacing KANG OS and will not offer to root your device.</string>
 		<string name="sys_rol3">Installing zips or performing adb operations may still modify the system partition.</string>
 		<string name="sys_ro_never_show_chk">Never show this screen during boot again</string>
 		<string name="sys_ro_keep_ro_btn">Keep Read Only</string>
@@ -748,7 +754,7 @@
 		<string name="theme_ver_err">Custom theme version does not match TWRP version. Using stock theme.</string>
 		<string name="up_a_level">(Up A Level)</string>
 		<string name="install_reboot" version="2">Rebooting in %tw_sleep% second(s)</string>
-		<string name="pb_flashed">* New PBRP Flashed, press Volume {1}</string>
+		<string name="pb_flashed">* New KANG OS Recovery Flashed, press Volume {1}</string>
 		<string name="pb_flashed_">* Magisk Patched Ramdisk Detected!!!</string>
 		<string name="pb_rb_msg">* Volume {1} to Finish</string>
 		<string name="adbbackup_error">Error with ADB Backup. Quitting..."</string>
@@ -811,14 +817,14 @@
 		<string name="Dm_Verity_confirm">Try to install it?</string>
 		<string name="use_aromafm">Use Aroma File Manager</string>
 		
-		<!--PBRP Themes-->
+		<!--KANG OS Recovery Themes-->
 		<string name="pbthemes">Themes</string>
 	        <string name="pbthemes_hdr">Themes</string>
 		
-		<!--PBRP about-->
+		<!--KANG OS Recovery about-->
 		<string name="special">Special</string>
 		<string name="special_hdr">Special</string>
-		<string name="about_pbrp">About PBRP</string>
+		<string name="about_pbrp">About KANG OS</string>
 		<string name="device_info">Device Information</string>
 		<string name="device_maintainer">Device Maintainer</string>
 		<string name="thanksto">Thanks to</string>
@@ -830,13 +836,13 @@
 		<string name="device_name">Device Name            :    %pb_device_manufacturer% %pb_device_name%</string>
 		<string name="device_codename">Device Codename   :    %pb_device%</string>
 		<string name="build_date">Build Date                 :    %pb_build%</string>
-		<string name="pb_version">PitchBlack Version  :    %pb_ver%</string>
+		<string name="pb_version">KANG OS Recovery Version  :    %pb_ver%</string>
 		<string name="device_maintainer1">Device Maintainer   :    %pb_maintainer%</string>
 		<string name="core_contributors">Core Contributors</string>
 		<string name="miscellaneous">Miscellaneous</string>
 		
 		<!--Extras -->
-		<string name="pbrpspecial_btn">PBRP Specials</string>
+		<string name="pbrpspecial_btn">KANG Specials</string>
 		<string name="install_txt">Wanna Add changes</string>
 		<string name="install2_txt">in form of Zips or Img</string>
 		<string name="wipe_txt">Release your device's</string>
@@ -850,7 +856,7 @@
 		<string name="advanced_txt">This page is not</string>
 		<string name="advanced2_txt">Enough for you?</string>
 		<string name="advanced3_txt">Switch to Advanced</string>
-		<string name="settings_txt">Customize PitchBlack Recovery!</string>
+		<string name="settings_txt">Customize KANG OS Recovery!</string>
 		<string name="customizations">Customizations</string>
 		<string name="themes_txt">Themes</string>
 		<string name="bg_color">Background Color</string>
@@ -939,7 +945,7 @@
 		<string name="pb_theme_2">us on</string>
 		<string name="pb_device_ab">Settings for A/B Devices</string>
 		<string name="pb_ota_instruction">Please check instructions for OTA Updates on</string>
-		<string name="pb_thanks">Thank you for using PitchBlack Recovery..!</string>
+		<string name="pb_thanks">Thank you for using KANG OS Recovery..!</string>
 		<string name="pb_donate">Consider donating, if you like it</string>
 		<string name="pb_coming_soon">Coming Soon....!</string>
 	</resources>
