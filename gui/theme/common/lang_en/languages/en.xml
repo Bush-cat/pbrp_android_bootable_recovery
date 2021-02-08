@@ -9,6 +9,12 @@
 		<resource name="font_m" type="fontoverride" filename="pb.ttf" scale="100" />
 		<resource name="font_s" type="fontoverride" filename="pb.ttf" scale="100" />
 		<resource name="fixed" type="fontoverride" filename="pb.ttf" scale="100" />
+		
+		<!-- Features added by Bushcat -->
+		<string name="copy_ab_partitions">Copy A/B Partitions (Finalize)</string>
+		<string name="copy_ab_partitions1">Copy A/B (Finalize)</string>
+		<string name="copy_ab_partitions_confirm">Copy and overwrite slots? (also known as Finalize)</string>
+		<string name="copy_ab_partitions_text">The inactive slot will be copied to the active slot.</string>
 
 		<!-- Partition display names -->
 		<string name="system">System</string>
