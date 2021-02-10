@@ -39,10 +39,7 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<!-- Bushcat Theme strings -->
 		<string name="twrp_header">%theme_header%</string>
-		
-		
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp"> %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>

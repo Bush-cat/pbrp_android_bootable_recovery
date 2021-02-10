@@ -2,7 +2,7 @@
 <recovery>
 	<details>
 		<resolution width="1080" height="1920"/>
-		<author>TeamWin & Reza Adi</author>
+		<author>Bushcat & TeamWin & Reza Adi</author>
 		<title>PitchBlack Recovery Project</title>
 		<description>splash screen</description>
 		<themeversion>4</themeversion>
@@ -16,9 +16,15 @@
 	</resources>
 
 	<variables>
+		<!--Bushcat Themes-->
+		<variable name="theme_project_name" value="PitchBlack Recovery Project"/>
+		<variable name="theme_recovery_name" value="PitchBlack Recovery"/>
+		<variable name="theme_recovery_short" value="PBRP"/>
+		<variable name="theme_name" value="PitchBlack"/>
+		
 		<variable name="screen_width" value="1080"/>
 		<variable name="screen_height" value="1920"/>
-		<variable name="background_color" value="#191919"/>
+		<variable name="background_color" value="#000000"/>
 		<variable name="header_color" value="#00000000"/>
 		<variable name="accent_color" value="#00000000"/>
 	</variables>
@@ -27,7 +33,7 @@
 		<page name="splash">
 			<background color="%background_color2%"/>
 
-			<fill color="#191919">
+			<fill color="#000000">
 				<placement x="3" y="3" w="1074" h="1914"/>
 			</fill>
             
@@ -38,20 +44,8 @@
 
 			<text color="#FFFFFF">
 				<font resource="font_l"/>
-				<placement x="120" y="1300"/>
-				<text>PitchBlack Recovery</text>
-			</text>
-			
-			<text color="#FFFFFF">
-				<font resource="font_l"/>
-				<placement x="420" y="1430"/>
-				<text>Project</text>
-			</text>
-			
-			<text color="#303030">
-				<font resource="font_2"/>
-				<placement x="280" y="1700"/>
-				<text>Design by @AlexBesida</text>
+				<placement x="40" y="1300"/>
+				<text>%theme_recovery_name%</text>
 			</text>
 			
 		</page>
