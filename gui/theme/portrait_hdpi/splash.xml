@@ -21,6 +21,7 @@
 		<variable name="theme_recovery_name" value="PitchBlack Recovery"/>
 		<variable name="theme_recovery_short" value="PBRP"/>
 		<variable name="theme_name" value="PitchBlack"/>
+		<variable name="theme_author" value="Bushcat (tg @Bush_cat)"/>
 		
 		<variable name="screen_width" value="1080"/>
 		<variable name="screen_height" value="1920"/>
