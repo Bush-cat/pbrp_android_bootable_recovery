@@ -501,7 +501,7 @@
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
 				<placement x="%center_x%" y="1648" placement="5"/>
-				<text>%theme_author%</text>
+				<text>themed by %theme_author%</text>
 			</text>
 			<action>
 				<touch key="home"/>

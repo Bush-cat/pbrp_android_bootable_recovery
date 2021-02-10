@@ -6532,11 +6532,6 @@
 				<text>{@device_maintainer=Device Maintainer}</text>
 			</text>
 
-			<text style="text_header">
-				<placement x="350" y="525"/>
-				<text>{@contributors=Contributors}</text>
-			</text>
-
 			<button style="main_button_pbrp_custom">
 				<placement x="0" y="600"/>
 				<actions>
@@ -6578,11 +6573,6 @@
 				<text>{@Magisk_btn=Magisk}</text>
 			</text>
 
-			<text style="text_header">
-				<placement x="350" y="1245"/>
-				<text>{@Pin/Pass_Remover_btn=Pin/Pass Remover}</text>
-			</text>
-
 			<button style="main_button_pbrp_special_settings">
 				<placement x="0" y="1320"/>
 				<actions>
@@ -6602,13 +6592,9 @@
 			</text>
 
 			<text style="text_header">
+				<condition var1="tw_has_boot_slots" var2="1"/>
 				<placement x="350" y="1555"/>
 				<text>{@device_ab=A/B Device Settings}</text>
-			</text>
-
-			<text style="text_header">
-				<placement x="350" y="1605"/>
-				<text>{@tools_hdr=Tools Options}</text>
 			</text>
 
 			<action>
