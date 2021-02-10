@@ -268,10 +268,6 @@
 					<action function="page">rename_c</action>
 				</actions>
 			</button>
-			<image>
-				<image resource="i_icon"/>
-				<placement x="80" y="%row22a_y%"/>
-			</image>
 			<action>
 				<touch key="home"/>
 				<action function="page">main</action>
