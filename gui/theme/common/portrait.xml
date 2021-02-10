@@ -376,13 +376,13 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@twrp_header=PitchBlack Recovery Project}</text>
+				<text>{@twrp_header=%theme_project_name%}</text>
 			</text>
 
 			<text style="text_sub_header">
 				<condition var1="tw_no_cpu_temp" var2="0"/>
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>PBRP-%tw_version%</text>
+				<text>%theme_recovery_short%-%tw_version%</text>
 			</text>
 
 			<!-- Buttons -->
@@ -443,13 +443,13 @@
 			<button style="main_button_black2">
 				<placement x="%indent_button%" y="%row17a_y%" textplacementmain="1" large="1"/>
 				<icon resource="main_button_special"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=%theme_recovery_short% Special}</text>
 				<action function="page">pbrp_special</action>
 			</button>
 
 			<text style="text_header">
 				<placement x="90" y="%row19a_y%"/>
-				<text>{@settings_txt=Customize PBRP with themes, icons, more}</text>
+				<text>{@settings_txt=Customize %theme_recovery_short% with themes, icons, more}</text>
 			</text>
 
 			<button style="main_button_themes_features">
@@ -718,7 +718,7 @@
 				<listitem name="{@install_reboot_chk=Reboot after installation is complete}">
 					<data variable="tw_install_reboot"/>
 				</listitem>
-				<listitem name="{@inject_twrp_chk=Flash PBRP after install}">
+				<listitem name="{@inject_twrp_chk=Flash %theme_recovery_short% after install}">
 					<condition var1="tw_has_injecttwrp" var2="1"/>
 					<data variable="tw_inject_after_zip"/>
 				</listitem>
@@ -3389,7 +3389,7 @@
 
 			<text style="text_sub_header">
 				<placement x="200" y="%row7_y%"/>
-				<text>{@pb_thanks=Thank you for using PitchBlack Recovery..!}</text>
+				<text>{@pb_thanks=Thank you for using %theme_recovery_name%..!}</text>
 			</text>
 
 			<text style="text_sub_header">
@@ -3681,7 +3681,7 @@
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row4_y%" placement="5"/>
-				<text>{@sys_rop1=PBRP can leave your system partition unmodified}</text>
+				<text>{@sys_rop1=%theme_recovery_short% can leave your system partition unmodified}</text>
 			</text>
 
 			<text style="text_m">
@@ -3691,12 +3691,12 @@
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row6_y%" placement="5"/>
-				<text>{@sys_rop3=PBRP will be unable to prevent the stock ROM from}</text>
+				<text>{@sys_rop3=%theme_recovery_short% will be unable to prevent the stock ROM from}</text>
 			</text>
 
 			<text style="text_m">
 				<placement x="%center_x%" y="%row7_y%" placement="5"/>
-				<text>{@sys_rop4=replacing PBRP and will not offer to root your device.}</text>
+				<text>{@sys_rop4=replacing %theme_recovery_short% and will not offer to root your device.}</text>
 			</text>
 
 			<text style="text_m_fail">
@@ -6500,7 +6500,7 @@
 
 			<text style="text_l">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=%theme_recovery_short% Special}</text>
 			</text>
 
 			<text style="text_sub_header">
@@ -6519,7 +6519,7 @@
 
 			<text style="text_pb">
 				<placement x="350" y="350"/>
-				<text>{@about_pbrp=About PBRP}</text>
+				<text>{@about_pbrp=About %theme_recovery_short%}</text>
 			</text>
 
 			<text style="text_header">
