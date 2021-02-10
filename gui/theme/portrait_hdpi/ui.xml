@@ -163,6 +163,13 @@
 		<image name="pb" filename="pb" retainaspect="1" />
 	</resources>
 	<variables>
+		<!-- Bushcat Themes -->
+		<variable name="theme_project_name" value="PitchBlack Recovery Project"/>
+		<variable name="theme_recovery_name" value="PitchBlack Recovery"/>
+		<variable name="theme_recovery_short" value="PBRP"/>
+		<variable name="theme_name" value="PitchBlack"/>
+		
+		
 		<variable name="tw_samsung_navbar" value="0" persist="1"/>
 		<variable name="aromafm" value="1" persist="1"/>
 		<variable name="tw_hide_kb" value="0"/>

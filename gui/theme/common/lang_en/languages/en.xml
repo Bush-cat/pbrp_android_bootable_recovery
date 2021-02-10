@@ -39,7 +39,10 @@
 		<string name="autostorage">Storage</string>
 
 		<!-- GUI XML strings -->
-		<string name="twrp_header">PitchBlack Recovery Project</string>
+		<!-- Bushcat Theme strings -->
+		<string name="twrp_header">%theme_header%</string>
+		
+		
 		<string name="twrp_watch_header">TWRP %tw_version%</string>
 		<string name="cpu_temp"> %tw_cpu_temp% &#xB0;C</string>
 		<string name="battery_pct">Battery: %tw_battery%</string>
@@ -92,7 +95,7 @@
 		<string name="folder">Folder:</string>
 		<string name="file">File:</string>
 		<string name="zip_sig_chk">Zip signature verification</string>
-		<string name="inject_twrp_chk">Flash PBRP after install</string>
+		<string name="inject_twrp_chk">Flash %theme_recovery_short% after install</string>
 		<string name="install_reboot_chk">Reboot after installation is complete</string>
 		<string name="options_hdr">Options</string>
 		<string name="confirm_flash_hdr">Confirm Flash</string>
@@ -314,14 +317,14 @@
 		<string name="swipe_power_off_s">Power Off</string>
 		<string name="sys_ro_hdr">Unmodified System Partition</string>
 		<string name="sys_ro_keep">Keep System Read only?</string>
-		<string name="sys_rop1">PBRP can leave your system partition unmodified</string>
+		<string name="sys_rop1">%theme_recovery_name% can leave your system partition unmodified</string>
 		<string name="sys_rop2">to make it easier for you to take official updates.</string>
-		<string name="sys_rop3">PBRP will be unable to prevent the stock ROM from</string>
-		<string name="sys_rop4">replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rop3">%theme_recovery_name% will be unable to prevent the stock ROM from</string>
+		<string name="sys_rop4">replacing %theme_recovery_name% and will not offer to root your device.</string>
 		<string name="sys_rop5">Installing zips or performing adb operations may still</string>
 		<string name="sys_rop6">modify the system partition.</string>
-		<string name="sys_rol1">PBRP can leave your system partition unmodified to make it easier for you to take official updates.</string>
-		<string name="sys_rol2">PBRP will be unable to prevent the stock ROM from replacing PBRP and will not offer to root your device.</string>
+		<string name="sys_rol1">%theme_recovery_name% can leave your system partition unmodified to make it easier for you to take official updates.</string>
+		<string name="sys_rol2">%theme_recovery_name% will be unable to prevent the stock ROM from replacing %theme_recovery_name% and will not offer to root your device.</string>
 		<string name="sys_rol3">Installing zips or performing adb operations may still modify the system partition.</string>
 		<string name="sys_ro_never_show_chk">Never show this screen during boot again</string>
 		<string name="sys_ro_keep_ro_btn">Keep Read Only</string>
@@ -419,10 +422,10 @@
 		<string name="reload_theme_btn">Reload Theme</string>
 		<string name="reload_theme_btn1">Reload recovery theme if there are issues</string>
 		<string name="dumlock_btn">HTC Dumlock</string>
-		<string name="inject_twrp_btn">Inject TWRP</string>
-		<string name="inject_twrp_confirm">Re-Inject TWRP?</string>
-		<string name="injecting_twrp">Re-Injecting TWRP...</string>
-		<string name="inject_twrp_complete">TWRP Injection Complete</string>
+		<string name="inject_twrp_btn">Inject %theme_recovery_name%</string>
+		<string name="inject_twrp_confirm">Re-Inject %theme_recovery_name%?</string>
+		<string name="injecting_twrp">Re-Injecting %theme_recovery_name%...</string>
+		<string name="inject_twrp_complete">%theme_recovery_name% Injection Complete</string>
 		<string name="swipe_to_confirm">Swipe to Confirm</string>
 		<string name="part_sd_hdr">Partition SD card</string>
 		<string name="invalid_partsd_sel">You must select a removable device</string>
@@ -694,7 +697,7 @@
 		<string name="need_new_adb">You need adb 1.0.32 or newer to sideload to this device.</string>
 		<string name="no_pwd">No password provided.</string>
 		<string name="done_ors">Done processing script file</string>
-		<string name="injecttwrp">Injecting TWRP into boot image...</string>
+		<string name="injecttwrp">Injecting %theme_recovery_name% into boot image...</string>
 		<string name="zip_err">Error installing zip file '{1}'</string>
 		<string name="installing_zip">Installing zip file '{1}'</string>
 		<string name="select_backup_opt">Setting backup options:</string>
@@ -722,7 +725,7 @@
 		<string name="dumlock_restore">Restoring original boot...</string>
 		<string name="dumlock_reflash">Reflashing recovery to boot...</string>
 		<string name="run_script">Running {1} script...</string>
-		<string name="rename_stock">Renamed stock recovery file in /system to prevent the stock ROM from replacing TWRP.</string>
+		<string name="rename_stock">Renamed stock recovery file in /system to prevent the stock ROM from replacing %theme_recovery_name%.</string>
 		<string name="split_backup">Breaking backup file into multiple archives...</string>
 		<string name="backup_error">Error creating backup.</string>
 		<string name="restore_error">Error during restore process.</string>
@@ -734,8 +737,8 @@
 		<string name="base_pkg_err">Failed to load base packages.</string>
 		<string name="simulating">Simulating actions...</string>
 		<string name="backup_cancel">Backup Cancelled</string>
-		<string name="config_twrp">Configuring TWRP...</string>
-		<string name="config_twrp_err">Unable to configure TWRP with this kernel.</string>
+		<string name="config_twrp">Configuring %theme_recovery_name%...</string>
+		<string name="config_twrp_err">Unable to configure %theme_recovery_name% with this kernel.</string>
 		<string name="copy_log">Copied recovery log to {1}.</string>
 		<string name="max_queue">Maximum zip queue reached!</string>
 		<string name="min_queue">Minimum zip queue reached!</string>
@@ -751,10 +754,10 @@
 		<string name="no_real_sdcard">This device does not have a real SD card! Aborting!</string>
 		<string name="cancel_sideload">Cancelling ADB sideload...</string>
 		<string name="change_fs_err">Error changing file system.</string>
-		<string name="theme_ver_err">Custom theme version does not match TWRP version. Using stock theme.</string>
+		<string name="theme_ver_err">Custom theme version does not match %theme_recovery_name% version. Using stock theme.</string>
 		<string name="up_a_level">(Up A Level)</string>
 		<string name="install_reboot" version="2">Rebooting in %tw_sleep% second(s)</string>
-		<string name="pb_flashed">* New PBRP Flashed, press Volume {1}</string>
+		<string name="pb_flashed">* New %theme_recovery_name% Flashed, press Volume {1}</string>
 		<string name="pb_flashed_">* Magisk Patched Ramdisk Detected!!!</string>
 		<string name="pb_rb_msg">* Volume {1} to Finish</string>
 		<string name="adbbackup_error">Error with ADB Backup. Quitting..."</string>
@@ -824,7 +827,7 @@
 		<!--PBRP about-->
 		<string name="special">Special</string>
 		<string name="special_hdr">Special</string>
-		<string name="about_pbrp">About PBRP</string>
+		<string name="about_pbrp">About %theme_recovery_short%</string>
 		<string name="device_info">Device Information</string>
 		<string name="device_maintainer">Device Maintainer</string>
 		<string name="thanksto">Thanks to</string>
@@ -836,13 +839,13 @@
 		<string name="device_name">Device Name            :    %pb_device_manufacturer% %pb_device_name%</string>
 		<string name="device_codename">Device Codename   :    %pb_device%</string>
 		<string name="build_date">Build Date                 :    %pb_build%</string>
-		<string name="pb_version">PitchBlack Version  :    %pb_ver%</string>
+		<string name="pb_version">%theme_name% Version  :    %pb_ver%</string>
 		<string name="device_maintainer1">Device Maintainer   :    %pb_maintainer%</string>
 		<string name="core_contributors">Core Contributors</string>
 		<string name="miscellaneous">Miscellaneous</string>
 		
 		<!--Extras -->
-		<string name="pbrpspecial_btn">PBRP Specials</string>
+		<string name="pbrpspecial_btn">%theme_recovery_short% Specials</string>
 		<string name="install_txt">Make modifications to</string>
 		<string name="install2_txt">your device</string>
 		<string name="wipe_txt">Wipe or format your</string>
@@ -855,7 +858,7 @@
 		<string name="mount2_txt">partitions</string>
 		<string name="advanced_txt">More options for</string>
 		<string name="advanced2_txt">advanced users</string>
-		<string name="settings_txt">Customize PitchBlack Recovery</string>
+		<string name="settings_txt">Customize %theme_recovery_name%</string>
 		<string name="customizations">Customizations</string>
 		<string name="themes_txt">Themes</string>
 		<string name="bg_color">Background Color</string>
@@ -913,7 +916,7 @@
 		<string name="pb_dm_verity">Successfully patched DM-Verity</string>
 		<string name="pb_dm_verity_off">DM-Verity is not enabled</string>
 		<string name="pb_bk">Creating Backup of PB Files -- /tmp/pb/backup_wip...</string>
-		<string name="pb_bk_no">No Tools of PBRP are detecting Reflash the PBRP Package</string>
+		<string name="pb_bk_no">No Tools of %theme_recovery_short% are detecting Reflash the %theme_recovery_short% Package</string>
 		<string name="mount_system_as_root">Mount System As Root</string>
 		<string name="zip_err_compatibility">Bypass Treble Compatibility</string>
 		<string name="pb_wipe_substratum_overlays">Substratum Overlays</string>
@@ -932,7 +935,7 @@
 		<string name="pb_dev_change">Changing Device Codename from %pb_prop_value% to %pb_codename_change%</string>
 		<string name="pb_dev_changed">Device Codename Changed to %pb_codename_change%</string>
 		<string name="pb_dev_msg">! This is A Temporary Change will be Restored after Restart</string>
-		<string name="pb_dev_name">PBRP Device Codename Changer</string>
+		<string name="pb_dev_name">%theme_recovery_short% Device Codename Changer</string>
 		<string name="codename_changer">Codename Changer</string>
 		<string name="magisk_done">-- Magisk Modules Wipe Complete!</string>
 		<string name="pb_wipe_fbe_cache">FBE Cache</string>
@@ -944,7 +947,7 @@
 		<string name="pb_theme_2">us on</string>
 		<string name="pb_device_ab">Settings for A/B Devices</string>
 		<string name="pb_ota_instruction">Please check instructions for OTA Updates on</string>
-		<string name="pb_thanks">Thank you for using PitchBlack Recovery..!</string>
+		<string name="pb_thanks">Thank you for using %theme_recovery_name%..!</string>
 		<string name="pb_donate">Consider donating, if you like it</string>
 		<string name="pb_coming_soon">Coming Soon....!</string>
 	</resources>
