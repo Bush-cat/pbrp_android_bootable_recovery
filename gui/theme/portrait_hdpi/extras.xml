@@ -6,7 +6,7 @@
 		<template name="page"/>
 		<text style="text_l">
 			<placement x="%col1_x_header%" y="%row3_header_y%"/>
-			<text>{@pb_dev_name=PBRP Device Codename Changer}</text>
+			<text>{@pb_dev_name=Device Codename Changer}</text>
 		</text>
 		<text style="text_sub_header">
 			<placement x="%col1_x_header%" y="%row4_header_y%"/>
@@ -272,10 +272,6 @@
 				<image resource="i_icon"/>
 				<placement x="80" y="%row22a_y%"/>
 			</image>
-			<text style="text_sub_header">
-				<placement x="140" y="%row22a_y%"/>
-				<text>{@pb_tools_info=Tools information can be found at pbrp.ml/docs/tools}</text>
-			</text>
 			<action>
 				<touch key="home"/>
 				<action function="page">main</action>
@@ -302,7 +298,7 @@
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=%theme_recovery_short% Special}</text>
 			</text>
 			<text>
 				<font resource="font_roboto" color="%sub_header_color%"/>
@@ -416,11 +412,11 @@
 			</image>
 			<text style="text_pb">
 				<placement x="%col1_x_header%" y="%row3_header_y%"/>
-				<text>{@about_pbrp=About PBRP}</text>
+				<text>{@about_pbrp=About %theme_recovery_short%}</text>
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=%theme_recovery_short% Special}</text>
 			</text>
 			<image>
 				<image resource="power_logo"/>
@@ -444,7 +440,7 @@
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
 				<placement x="180" y="%row11a_y%"/>
-				<text>{@pb_version=PitchBlack Version}</text>
+				<text>{@pb_version=%theme_recovery_name% Version}</text>
 			</text>
 			<text>
 				<font resource="font_sub_header" color="%sub_header_color%"/>
@@ -527,7 +523,7 @@
 			</text>
 			<text style="text_install_subheader">
 				<placement x="%col1_x_header%" y="%row4_header_y%"/>
-				<text>{@pbrpspecial_btn=PBRP Special}</text>
+				<text>{@pbrpspecial_btn=%theme_recovery_short% Special}</text>
 			</text>
 			<image>
 				<image resource="power_logo"/>
