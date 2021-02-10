@@ -278,13 +278,13 @@
 		<variable name="navbar_btn_y" value="1800"/>
 		<variable name="keyboard_y" value="1100"/>
 		<variable name="keyboard_terminal_y" value="1010"/>
-		<variable name="background_color" value="#141414"/>
-		<variable name="background_color2" value="#111112"/>
-		<variable name="theme_color" value="#010100"/>
-		<variable name="front_color" value="#010100"/>
-		<variable name="accent_color" value="#7F000000"/>
-	        <variable name="accent_color2" value="#555555"/>
-		<variable name="accent_color_semitransparent" value="#0090CA30"/>
+		<variable name="background_color" value="#000000"/>
+		<variable name="background_color2" value="#000000"/>
+		<variable name="theme_color" value="#000000"/>
+		<variable name="front_color" value="#000000"/>
+		<variable name="accent_color" value="#D4023500"/>
+	        <variable name="accent_color2" value="#D40235"/>
+		<variable name="accent_color_semitransparent" value="#D4023530"/>
 		<variable name="text_color" value="#FFFFFF"/>
 		<variable name="sub_header_color" value="#A3A3A3" />
 		<variable name="text_main_button_color" value="#FFFFFF"/>
@@ -304,7 +304,7 @@
 		<variable name="process" value="#00CC44"/>
 		<variable name="fileselector_linecolor" value="#000000"/>
 		<variable name="fileselector_linecolor2" value="#FFFFFF"/>
-		<variable name="fileselector_highlight_color" value="#555555"/>
+		<variable name="fileselector_highlight_color" value="#D40235"/>
 		<variable name="fileselector_separatorheight" value="2"/>
 		<variable name="fileselector_spacing" value="0"/>
 		<variable name="fileselector_install_height" value="1410"/>
